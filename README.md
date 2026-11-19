@@ -54,6 +54,7 @@
 ├── notes/
 │   ├── TEMPLATE.md          # 记录模板
 │   └── ...                  # 按日期归档的原始笔记
+├── stage0-basics/           # ⓪ PyTorch 基础（Jupyter notebook）
 ├── stage1-nanogpt/          # ① 对 nanoGPT 的阅读、实验、复盘
 ├── stage2-from-scratch/     # ② 自己手写的实现（本仓库主体）
 ├── stage3-nanochat/         # ③ nanochat 的配置、评测、成本记录
@@ -76,11 +77,15 @@ cd 0to1_GPT
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r env\requirements.txt
+pip install jupyterlab ipykernel
+python -m ipykernel install --user --name 0to1-gpt --display-name "0to1_GPT (Python 3.12)"
 
 # 拉外部项目（放 vendor/，不入库）
 git clone https://github.com/karpathy/nanoGPT.git  vendor\nanoGPT
 git clone https://github.com/karpathy/nanochat.git vendor\nanochat
 ```
+
+打开 notebook：**双击根目录的 `start-jupyter.bat`**（或 `.venv\Scripts\jupyter-lab.exe`）。
 
 > **网络**：国内访问 GitHub 常被重置，需要走代理。若本机代理端口是 7890：
 >

@@ -12,27 +12,27 @@
 
 | 课 | 主题 | 文件 | 你要能回答 |
 |---|---|---|---|
-| B1 | 张量：shape / dtype / device、变形、广播 | `b1_tensor.py` | 看到 `[2, 3, 4]` 能说出每个数字代表什么 |
-| B2 | autograd：梯度存在哪、为什么要 `zero_grad()` | `b2_autograd.py` | 那三个答不上的问题里的前两个 |
-| B3 | `nn.Module`：参数、`state_dict`、train/eval | `b3_module.py` | 模型参数到底存在哪、怎么存盘 |
-| B4 | 训练循环与 `DataLoader` | `b4_loop.py` | 五个步骤的顺序，以及第三问 |
-| B5 | 综合：不看教程写一个字符分类器 | `b5_project.py` | 独立写完，不抄 |
+| B1 | 张量：shape / dtype / device、变形、广播 | `b1_tensor.ipynb` | 看到 `[2, 3, 4]` 能说出每个数字代表什么 |
+| B2 | autograd：梯度存在哪、为什么要 `zero_grad()` | `b2_autograd.ipynb` | 那三个答不上的问题里的前两个 |
+| B3 | `nn.Module`：参数、`state_dict`、train/eval | `b3_module.ipynb` | 模型参数到底存在哪、怎么存盘 |
+| B4 | 训练循环与 `DataLoader` | `b4_loop.ipynb` | 五个步骤的顺序，以及第三问 |
+| B5 | 综合：不看教程写一个字符分类器 | `b5_project.ipynb` | 独立写完，不抄 |
 
 ## 怎么用
 
-每节课的文件都是**能直接跑的**：
+**双击仓库根目录的 `start-jupyter.bat`**，浏览器会自动打开 JupyterLab。
 
-```powershell
-.venv\Scripts\python.exe stage0-basics\b1_tensor.py
-```
+然后在左侧找到 `stage0-basics/b1_tensor.ipynb`，点开。
 
-文件的结构固定：
+每节课的结构固定：
 
-1. **讲解段** —— 跑起来会打印出说明和示例
-2. **示例** —— 可以直接改数字再跑
-3. **练习** —— 文件末尾有填空，填完会自动判对错
+1. **讲解格子** —— Markdown，直接读
+2. **代码格子** —— `Shift + Enter` 运行，可以直接改数字再跑
+3. **练习格子** —— 文件末尾，改标了 `← 改这一行` 的地方，再跑那一格
 
-练习没做对不会中断，只会打 `✗`。全部 `✓` 就算这节过了。
+用 notebook 的好处：**改一行只重跑那一格**，不用整个文件重来。
+
+> 第一次打开如果提示选 kernel，选 **`0to1_GPT (Python 3.12)`**。
 
 ## 通过标准
 
