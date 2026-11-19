@@ -97,6 +97,19 @@ git clone https://github.com/karpathy/nanochat.git vendor\nanochat
 >
 > 用完后可以用 `git config --global --unset http.proxy` 取消。
 
+## 常见问题
+
+**notebook 报 `requires the ipykernel package`**
+
+说明 VS Code 选的是 uv 托管的基础 Python（`...\uv\python\cpython-3.12-...\python.exe`），不是项目 venv。
+
+- **不要**执行提示里那条 `pip install ipykernel --user`，那会装进全局解释器
+- 修复一：`Ctrl+Shift+P` → **Python: Select Interpreter** → 选 `Python 3.12.14 ('.venv': venv)`
+- 修复二：notebook 右上角点内核名 → **Select Another Kernel** → **Python Environments** → 选同一个
+- 确认：右上角应显示带 `.venv` 标识的 kernel 名
+
+> 用 VS Code 打开的必须是 `0to1_GPT` 这一层，不是它的父目录，否则 `.vscode/settings.json` 不生效。
+
 ## 每个阶段怎么用
 
 **① `stage1-nanogpt/`**
