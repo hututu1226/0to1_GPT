@@ -7,6 +7,8 @@
 *.json    text eol=lf
 *.yml     text eol=lf
 *.yaml    text eol=lf
+# notebook 是 JSON，Jupyter 自己写 LF，这里统一掉避免 diff 噪音
+*.ipynb   text eol=lf
 
 # Windows 脚本保留 CRLF
 *.ps1     text eol=crlf
