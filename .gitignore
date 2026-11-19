@@ -1,0 +1,50 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+.env
+.python-version
+
+# ---- Notebook ----
+.ipynb_checkpoints/
+
+# ---- 训练产物 ----
+checkpoints/
+runs/
+outputs/
+wandb/
+logs/
+*.log
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.bin
+*.onnx
+
+# ---- 数据 ----
+data/
+datasets/
+*.npy
+*.h5
+
+# ---- 外部仓库（自行 clone，见 vendor/README.md）----
+vendor/*
+!vendor/README.md
+
+# ---- 系统 ----
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---- 编辑器 ----
+.vscode/
+.idea/
+*.swp
