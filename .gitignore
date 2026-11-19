@@ -45,6 +45,8 @@ desktop.ini
 .DS_Store
 
 # ---- 编辑器 ----
-.vscode/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
 .idea/
 *.swp

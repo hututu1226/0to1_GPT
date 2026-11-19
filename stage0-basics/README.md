@@ -20,9 +20,11 @@
 
 ## 怎么用
 
-**双击仓库根目录的 `start-jupyter.bat`**，浏览器会自动打开 JupyterLab。
+用 **VS Code** 打开仓库文件夹，点开 `stage0-basics/b1_tensor.ipynb`。
 
-然后在左侧找到 `stage0-basics/b1_tensor.ipynb`，点开。
+右上角点 **Select Kernel**，选 **`0to1_GPT (Python 3.12)`**，或者直接选 `.venv\Scripts\python.exe`。
+
+> 仓库里带了 `.vscode/settings.json`，默认就指向这个 venv，通常不用手选。
 
 每节课的结构固定：
 
@@ -31,8 +33,6 @@
 3. **练习格子** —— 文件末尾，改标了 `← 改这一行` 的地方，再跑那一格
 
 用 notebook 的好处：**改一行只重跑那一格**，不用整个文件重来。
-
-> 第一次打开如果提示选 kernel，选 **`0to1_GPT (Python 3.12)`**。
 
 ## 通过标准
 

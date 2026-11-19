@@ -1,0 +1,9 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "jupyter.notebookFileRoot": "${workspaceFolder}",
+  "notebook.lineNumbers": "on",
+  "notebook.output.textLineLimit": 60,
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true
+}
