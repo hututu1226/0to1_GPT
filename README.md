@@ -110,6 +110,20 @@ git clone https://github.com/karpathy/nanochat.git vendor\nanochat
 
 > 用 VS Code 打开的必须是 `0to1_GPT` 这一层，不是它的父目录，否则 `.vscode/settings.json` 不生效。
 
+**移动或重命名仓库文件夹后，`.venv` 会失效**
+
+uv 生成的 `.venv\Scripts\jupyter.exe` 等启动器里写死了绝对路径。表现是 `jupyter` 命令报 `uv trampoline failed to canonicalize script path`。
+
+重建步骤（**先确认没有 kernel 在跑**）：
+
+```powershell
+Stop-Process -Id <占用 .venv 的 python 进程> -Force
+Remove-Item .venv -Recurse -Force
+uv venv --python 3.12 .venv
+uv pip install --python .venv\Scripts\python.exe torch --index-url https://download.pytorch.org/whl/cpu
+uv pip install --python .venv\Scripts\python.exe numpy tiktoken matplotlib tqdm jupyterlab ipykernel
+```
+
 ## 每个阶段怎么用
 
 **① `stage1-nanogpt/`**
