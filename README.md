@@ -88,7 +88,6 @@ git clone https://github.com/karpathy/nanochat.git vendor\nanochat
 打开 notebook：用 **VS Code** 打开这个文件夹，点开 `stage0-basics\b1_tensor.ipynb`，右上角选 kernel → `0to1_GPT (Python 3.12)`。
 
 > 仓库自带 `.vscode/settings.json`，默认解释器已指向 `.venv`，一般不用手选。
-> 不需要 JupyterLab：VS Code 的 Jupyter 扩展直接跑 notebook。
 
 > **网络**：国内访问 GitHub 常被重置，需要走代理。若本机代理端口是 7890：
 >
