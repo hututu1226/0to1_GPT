@@ -52,9 +52,10 @@
 │   ├── 工作日志.md          # 主记录：每动手一次记一笔
 │   └── 路线参考.md          # 39 个任务 + 依赖顺序建议
 ├── notes/
-│   ├── README.md            # 笔记索引 + 怎么记
-│   ├── TEMPLATE.md          # 笔记模板
-│   └── b1-张量.md           # 按课归档的学习笔记
+│   ├── README.md            # 笔记索引 + 流程
+│   ├── TEMPLATE.md          # 笔记模板（可选）
+│   ├── _draft.md            # 随手写的草稿位
+│   └── pytorch入门.md       # 阶段 ⓪ 的全部笔记（一个阶段一份）
 ├── stage0-basics/           # ⓪ PyTorch 基础（Jupyter notebook）
 ├── stage1-nanogpt/          # ① 对 nanoGPT 的阅读、实验、复盘
 ├── stage2-from-scratch/     # ② 自己手写的实现（本仓库主体）
