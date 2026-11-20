@@ -52,8 +52,9 @@
 │   ├── 工作日志.md          # 主记录：每动手一次记一笔
 │   └── 路线参考.md          # 39 个任务 + 依赖顺序建议
 ├── notes/
-│   ├── TEMPLATE.md          # 记录模板
-│   └── ...                  # 按日期归档的原始笔记
+│   ├── README.md            # 笔记索引 + 怎么记
+│   ├── TEMPLATE.md          # 笔记模板
+│   └── b1-张量.md           # 按课归档的学习笔记
 ├── stage0-basics/           # ⓪ PyTorch 基础（Jupyter notebook）
 ├── stage1-nanogpt/          # ① 对 nanoGPT 的阅读、实验、复盘
 ├── stage2-from-scratch/     # ② 自己手写的实现（本仓库主体）
@@ -144,7 +145,8 @@ nanochat 源码在 `vendor/nanochat`。这里放：改过的配置、评测结�
 
 ## 记录约定
 
-1. 每次动手，在 [docs/工作日志.md](docs/工作日志.md) **顶部**加一条（模板见 [notes/TEMPLATE.md](notes/TEMPLATE.md)）
+1. 每次动手，在 [docs/工作日志.md](docs/工作日志.md) **顶部**加一条（模板见 [docs/日志模板.md](docs/日志模板.md)）
+2. 每学完一节，在 [notes/](notes/) 里留一份笔记（模板见 [notes/TEMPLATE.md](notes/TEMPLATE.md)）
 2. 顺手更新 README 与工作日志里的「进度」表
 3. 产出放对应 `stage*/` 目录；数据集、checkpoint、`runs/` 不进 git
 4. 卡住超过 2 小时就换任务，把现象记进工作日志的「卡住」
