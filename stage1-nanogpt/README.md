@@ -14,6 +14,17 @@
 - [ ] 一份「超参为什么在那儿」的笔记（放本目录）
 - [ ] 一次故障复盘：故意造 loss 尖刺，再定位修好
 
+## 课程 notebook
+
+和阶段 ⓪ 一样，按课走。两本都是**直接 import `vendor/nanoGPT/model.py` 里真实代码**来读，不是复制粘贴的伪代码。
+
+| 文件 | 内容 | 对应任务 |
+|---|---|---|
+| `s1_1_结构.ipynb` | GPTConfig 六个超参 → `__init__` 五个组件 → `forward` 数据流 → 权重绑定 → 残差 | #2 |
+| `s1_2_attention.ipynb` | QKV 拆分、分头、缩放、因果遮罩、softmax、合头、flash 分支 | #2 |
+
+**源码在哪**：`vendor\nanoGPT\model.py`（330 行）。`vendor/` 被 gitignore 了，所以在 VS Code 里可能是灰色/不显眼，但它就在项目根目录下的 `vendor\nanoGPT\` 里。
+
 ## 怎么做
 
 ```powershell
